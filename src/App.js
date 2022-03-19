@@ -9,7 +9,7 @@ import Users from './component/usersComponent';
 import Comments from './component/commentsComponent';
 import React from 'react';
 import Navbar from './component/navBar';
-
+import AppBar from "./component/Appbar"
 function App() {
 
 
@@ -17,9 +17,11 @@ function App() {
     <React.Fragment>
       
     <BrowserRouter>
-    <Navbar></Navbar>
-    <Routes>
+    <AppBar></AppBar>
+    
+    <Routes >
       <Route path='/' element={<Albums/>}/>
+      <Route path='albums' element={<Albums/>}/>
       <Route path='comments' element={<Comments/>}/>
       <Route path='photos' element={<Photos/>}/>
       <Route path='posts' element={<Posts/>}/>
