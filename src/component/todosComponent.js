@@ -21,7 +21,7 @@ const Todos=()=>{
     },[])
  console.log(todos)
     return(
-        <TableContainer component={Paper}>
+        <TableContainer component={Paper} >
         <Table sx={{ maxWidth: 650 }} aria-label="simple table">
           <TableHead>
             <TableRow>
